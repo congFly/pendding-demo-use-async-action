@@ -3,7 +3,10 @@ var webpack = require("webpack");
 
 module.exports = {
   entry: {
-    vendor: ["react", "redux", "react-redux", "react-dom", "./node_modules/bootstrap/dist/css/bootstrap.css"],
+    vendor: ["react", "redux", "react-redux", "react-dom",
+      "./node_modules/bootstrap/dist/css/bootstrap.css",
+      "./node_modules/font-awesome/css/font-awesome.min.css"
+    ],
     index: ["./public/src/index", "./public/style/index.css"]
   },
   output: {
@@ -21,7 +24,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/, 
+        test: /\.css$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
       {test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff'},

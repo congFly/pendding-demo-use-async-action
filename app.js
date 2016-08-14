@@ -2,6 +2,8 @@ import express from 'express';
 
 const app = express();
 
+app.use(express.static('public'));
+
 app.get('/todos', (req, res)=> {
   setTimeout(()=> {
     res.send([{
