@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 
-const list = ['秦齐', '师悦', '张艺儒', '张莎', '张培', '崔倩', '魏航', '韩亦乐', '同旸', '杜金桥', '张颖嘉', '张磊', '尹萌', '王根旺', '鱼娟', '祁燕子', '王婷', '陈崇发', '任丹丹', '段雪', '符聪聪', '赵思远', '王盼', '刘茹', '刘幸', '胡雄超', '马宇辰', '赵琪琪', '王齐'];
+const list = ['张伟', '王伟', '王芳', '李伟', '李娜', '张敏', '李静', '王静', '刘伟', '王秀英', 'Hiroto', 'Shota', 'Ren', 'Sota', 'Sora', 'Yuto', 'Yudo', 'Yuma', 'Eita', 'Sho'];
 
 const getRandomName = ()=> {
   let idx = parseInt(Math.random() * (list.length));
